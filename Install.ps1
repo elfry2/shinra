@@ -16,7 +16,7 @@ scoop install "nginx@$NginxVersion"
 scoop install "$PHPPackageName@$PHPVersion"
 #scoop install nginx
 #scoop install php
-scoop install postgresql composer nodejs mongodb mongosh curlie neovim gh
+scoop install postgresql composer nodejs mongodb mongosh curlie neovim gh dbeaver
 
 # Copy the files into the installation directories.
 # Inspired by something found on https://gist.github.com/odan/b5f7de8dfbdbf76bef089776c868fea1.
