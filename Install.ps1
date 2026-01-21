@@ -26,6 +26,7 @@ Copy-Item ".\php.ini" -Destination "$HOME\scoop\apps\$PHPPackageName\$PHPVersion
 Copy-Item "cli\php.ini" -Destination "$HOME\scoop\apps\$PHPPackageName\$PHPVersion\cli" -Verbose
 
 # Start shinra on startup.
+Remove-Item -Verbose -Recurse -Force "C:\shinra"
 New-Item -Path "C:\shinra" -ItemType Directory -Verbose
 Copy-Item ".\Config.ps1" -Destination "C:\shinra" -Verbose
 Copy-Item ".\Start.ps1" -Destination "C:\shinra" -Verbose
